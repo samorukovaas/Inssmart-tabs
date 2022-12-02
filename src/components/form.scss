@@ -1,0 +1,32 @@
+.form {
+    &__input {
+        padding: 14px 16px;
+        font-weight: 400;
+        font-size: 16px;
+        max-width: 350px;
+        width: 100%;
+        outline: none;
+        background: $white;
+        border: 1px solid $grey;
+        border-radius: 16px;
+
+        &::placeholder {
+            color: $grey;
+          }
+        :focus::placeholder {
+            color: $blueFocus;
+        }
+    }
+
+    &__button {
+        margin-left: 24px;
+    }
+
+    &__submit {
+        margin-top: 40px;
+        background: $white;
+        box-shadow: 0px 10px 40px rgba(12, 12, 12, 0.1);
+        border-radius: 20px;
+        padding: 30px 36px;
+    }
+}

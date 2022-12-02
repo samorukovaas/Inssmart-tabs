@@ -1,0 +1,89 @@
+body {
+    font-family: 'Montserrat';
+    font-style: normal;
+    background: $bgColor;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 39px;
+    color: $colorTitle;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    color: $colorTitle;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: $colorTitle;
+}
+
+.submit {
+    padding: 14px 24px;
+    border: none;
+    background: $blue;
+    border-radius: 16px;
+    color: $white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    cursor: pointer;
+
+    &:hover {
+        background: $blueFocus;
+    }
+}
+
+.reset {
+    padding: 14px 24px;
+    border: none;
+    background: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $colorTitle;
+    cursor: pointer;
+
+    &:hover {
+        color: $blueFocus;
+    }
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        position: relative;
+        margin-bottom: 16px;
+        max-width: 300px;
+        width: 100%;
+        color: $colorText;
+    }
+
+    &-icon {
+        li {
+            padding-left: 30px;
+
+            &:before {
+                position: absolute;
+                display: block;
+                content: '';
+                width: 20px;
+                height: 20px;
+                left: 0;
+                background: url(../../public/img/list-icon.svg);
+            }
+        }
+    }
+}

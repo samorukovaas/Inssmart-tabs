@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>тестовое Саморукова</title>
+</head>
+<body>
+  <section class="tabs">
+    <ul class="tabs__list">
+      <li class="tabs__list-item">
+        <a href="#tab1" class="tabs__list-link">Горный велосипед</a>
+      </li>
+      <li class="tabs__list-item">
+        <a href="#tab2" class="tabs__list-link">Женский велосипед</a>
+      </li>
+    </ul>
+    <div class="tabs__container">
+      <div id="tab1" class="tabs__content">
+        <div class="card">
+          <div class="card__description">
+            <img src="../public/img/bicycle1.png" class="card__img" alt="">
+            <div>
+              <h1 class="card__title">Велосипед STELS Navigator 510 HD 26 2022</h1>
+              <p class="card__text">Данный велосипед с колесами 26 дюймов хорошо подходит высоким подросткам.
+                Прогиб рамы и небольшой размер рамы расчитан на рост от 135 до 165 см.
+              </p>
+              <p class="card__text">
+                Суммарный вес велосипеда был снижен до 16,9 кг,
+                так как рама была изготовлена с учетом использования велосипеда подростками.
+              </p>
+            </div>
+          </div>
+          <div class="card__info">
+            <h3 class="card__title">Характеристики</h3>
+            <ul class="list">
+              <li class="list__item">1. Двойной обод</li>
+              <li class="list__item">3. Колеса диаметром 26 дюймов</li>
+              <li class="list__item">2. Алюминиевый сплав</li>
+              <li class="list__item">4. Покрышки 26х1,95"</li>
+            </ul>
+          </div>
+          <div class="card__form">
+            <h3 class="card__title">Добавить характеристику</h3>
+            <form class="form">
+              <input class="form__input" id="prof_name" type="text" placeholder="Алюминиевый сплав">
+              <button type="submit" class="submit" onclick="add_prof();" id="add_pfro">Добавить</button>
+              <div class="form__submit">
+                <button class="submit" type="submit">Окей</button>
+                <button class="reset" type="submit">Отмена</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="tab2" class="tabs__content">
+        <div class="card">
+          <div class="card__description">
+            <img src="../public/img/bicycle2.png" class="card__img" alt="">
+            <div>
+              <h1 class="card__title">Велосипед SCHWINN Traveler women 2022</h1>
+              <p class="card__text">Женский велосипед со стальной 
+                рамой Classic step-true lightweight позволяет девушкам без проблем его перемещать.
+              </p>
+              <p class="card__text">
+                На данном велосипеде имеется 7 скоростей с переключателями от Shimano, а жесткая вилка 
+                обеспечивает отличную управляемость. Подходит для катания по асфальтированным поверхностям.
+              </p>
+            </div>
+          </div>
+          <div class="card__info">
+            <h3 class="card__title">Характеристики</h3>
+            <ul class="list list-icon">
+              <li class="list__item">Стальная рама</li>
+              <li class="list__item">Колеса диаметром 24 дюймов</li>
+              <li class="list__item">Жесткая вилка</li>
+              <li class="list__item">7 скоростей</li>
+            </ul>
+          </div>
+          <div class="card__form">
+            <h3 class="card__title">Добавить характеристику</h3>
+            <form class="form">
+              <input class="form__input" type="text" placeholder="Алюминиевый сплав">
+              <button type="submit" class="submit">Добавить</button>
+              <div class="form__submit">
+                <button class="submit" type="submit">Окей</button>
+                <button class="reset" type="submit">Отмена</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
